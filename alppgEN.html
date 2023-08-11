@@ -3,33 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rasgele Şifre Oluşturucu</title>
+<title>Random Password Generator</title>
 <style>
   body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
-    background-color: black; /* Arka plan rengini siyah yapar */
-    color: white; /* Yazı rengini beyaz yapar */
+    background-color: black; /* Sets the background color to black */
+    color: white; /* Sets the text color to white */
   }
   .rainbow-text {
-            font-size: 36px;
-            background-image: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 20px;
-        }
+    font-size: 36px;
+    background-image: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+  }
 </style>
 </head>
 <body>
     <h1 class="rainbow-text">ALP PASSWORD GENERATOR</h1>
-  <h1>Rasgele Şifre Oluşturucu</h1>
+  <h1>Random Password Generator</h1>
   
-  <label for="passwordLength">Parola Uzunluğu:</label>
+  <label for="passwordLength">Password Length:</label>
   <input type="number" id="passwordLength" min="1" value="12">
   <br><br>
   
-  <label for="hashAlgorithm">Hash Algoritması:</label>
+  <label for="hashAlgorithm">Hash Algorithm:</label>
   <select id="hashAlgorithm">
     <option value="SHA-256">SHA-256</option>
     <option value="SHA-384">SHA-384</option>
@@ -45,19 +45,20 @@
   </select>
   <br><br>
   
-  <label for="characterSet">Karakter Seti:</label>
+  <label for="characterSet">Character Set:</label>
   <select id="characterSet">
-    <option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789">Harf ve Rakam</option>
-    <option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*">Harf, Rakam ve Özel Karakterler</option>
+    <option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789">Letters and Numbers</option>
+    <option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*">Letters, Numbers, and Special Characters</option>
   </select>
   <br><br>
   
-  <button onclick="generatePassword()">Oluştur</button>
+  <button onclick="generatePassword()">Generate</button>
   
-  <h2>Oluşturulan Şifre:</h2>
+  <h2>Generated Password:</h2>
   <p id="generatedPassword"></p>
-  <h2>Hashlenmiş Şifre:</h2>
+  <h2>Hashed Password:</h2>
   <p id="hashedPassword"></p>
+  
   <p style="margin-top: 20px;">
     <a href="https://github.com/Alp19" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="24" height="24" style="vertical-align: middle;">
