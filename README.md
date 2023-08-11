@@ -1,4 +1,4 @@
 # alppg
-Alp Random Password Generator
-Console version: alppg.sh
-Web version: alppgTR.html alppgEN.html
+Alp Random Password Generator <br>
+Console version: alppg.sh <br>
+Web version: alppgTR.html alppgEN.html <br>
